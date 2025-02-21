@@ -1,0 +1,103 @@
+/* Genel Stil */
+body {
+    background: linear-gradient(135deg, #ff9a9e 30%, #fad0c4 50%, #fad0c4 70%);
+    background-size: cover;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('brush-texture.png') repeat;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+/* Profil Stili */
+.profile-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    margin-top: 50px;
+}
+
+.username {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.username .verified {
+    width: 20px;
+    height: 20px;
+}
+
+.bio {
+    font-size: 1.03em;
+    opacity: 0.9;
+    margin-top: -4px;
+    margin-bottom: 23px;
+    font-style: normal;
+}
+
+/* Sosyal Medya Linkleri */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    color: #000;
+    font-size: 1.8em;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #0073ff;
+}
+
+/* Spotify Embedlerini Yan Yana Yap */
+.music-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Alt alta geçmesini engeller */
+}
+
+.music-container iframe {
+    width: 380px;
+    height: 152px;
+}
+
+/* Spotify Başlığı */
+.music-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+    text-align: center;
+}
+
+
